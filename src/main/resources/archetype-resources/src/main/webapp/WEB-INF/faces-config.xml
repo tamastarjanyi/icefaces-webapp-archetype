@@ -6,7 +6,28 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
     <application>
         <view-handler>com.icesoft.faces.facelets.D2DFaceletViewHandler</view-handler>
+        <locale-config>
+            <default-locale>en</default-locale>
+            <supported-locale>en</supported-locale>
+            <supported-locale>de</supported-locale>
+            <supported-locale>hu</supported-locale>
+        </locale-config>
     </application>
+    <managed-bean>
+        <managed-bean-name>SimpleManagedRequestBean</managed-bean-name>
+        <managed-bean-class>managedBeans.SimpleManagedRequestBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>SimpleManagedSessionBean</managed-bean-name>
+        <managed-bean-class>managedBeans.SimpleManagedSessionBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>SimpleManagedApplicationBean</managed-bean-name>
+        <managed-bean-class>managedBeans.SimpleManagedApplicationBean</managed-bean-class>
+        <managed-bean-scope>application</managed-bean-scope>
+    </managed-bean>
 </faces-config>
 
 

@@ -7,34 +7,35 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ice="http://www.icesoft.com/icefaces/component">
+    <ice:loadBundle basename="messages" var="msg"/>
     <ice:outputDeclaration doctypeRoot="HTML" doctypePublic="-//W3C//DTD XHTML 1.0 Transitional//EN" doctypeSystem="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
     <head>
-        <ice:outputStyle href="/css/default.css"/>
-        <ice:outputStyle href="/css/cssLayout.css"/>
-        <ice:outputStyle href="/xmlhttp/css/rime/rime.css"/>
-        <title>Facelets Template</title>
-    </head>
+    <ice:outputStyle href="/css/default.css"/>
+    <ice:outputStyle href="/css/cssLayout.css"/>
+    <ice:outputStyle href="/xmlhttp/css/rime/rime.css"/>
+    <title>Facelets Template</title>
+</head>
 
-    <body>
+<body>
 
-        <div id="top">
-            <ui:include src="top.xhtml"/>
+    <div id="top">
+        <ui:include src="top.xhtml"/>
+    </div>
+    <div>
+        <div id="left">
+            <ui:insert name="left">#{msg.left}</ui:insert>
         </div>
         <div>
-            <div id="left">
-                <ui:insert name="left">Left</ui:insert>
+            <div id="right">
+                <ui:insert name="right">#{msg.right}</ui:insert>
             </div>
-            <div>
-                <div id="right">
-                    <ui:insert name="right">Right</ui:insert>
-                </div>
-                <div id="content" class="right_content">
-                    <ui:insert name="content">Content</ui:insert>
-                </div>
+            <div id="content" class="right_content">
+                <ui:insert name="content">Content</ui:insert>
             </div>
         </div>
-        <div id="bottom">
-            <ui:include src="bottom.xhtml"/>
-        </div>
-    </body>
+    </div>
+    <div id="bottom">
+        <ui:include src="bottom.xhtml"/>
+    </div>
+</body>
 </html>
