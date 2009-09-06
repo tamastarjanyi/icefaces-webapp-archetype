@@ -9,12 +9,10 @@
         <resource>src\main\webapp\templates\simpleFacelets.xhtml</resource>
         <resource>src\main\webapp\templates\template.xhtml</resource>
         <resource>src\main\webapp\templates\templateClient.xhtml</resource>
-        <resource>src\main\webapp\templates\welcomeICEfaces.jspx</resource>
         <resource>src\main\webapp\WEB-INF\faces-config.xml</resource>
         <resource>src\main\webapp\WEB-INF\faces-config.xml.xml</resource>
         <resource>src\main\webapp\WEB-INF\web.xml</resource>
         <resource>src\main\webapp\WEB-INF\sun-web.xml</resource>
-        <resource>faces-config.NavData</resource>
         <resource>src\main\java\managedBeans\SimpleManagedApplicationBean.java</resource>
         <resource>src\main\java\managedBeans\SimpleManagedRequestBean.java</resource>
         <resource>src\main\java\managedBeans\SimpleManagedSessionBean.java</resource>
