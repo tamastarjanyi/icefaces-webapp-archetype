@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.blogspot.tamastarjanyi</groupId>
     <artifactId>icefaces-webapp-archetype</artifactId>
-    <version>1.8.1-001</version>
+    <version>1.8.2-001</version>
     <packaging>jar</packaging>
     <description>Apache Maven IceFaces Web Application Archetype</description>
     <name>IceFaces WebApp Archetype</name>
@@ -47,4 +47,5 @@
         </plugins>
     </build>
 </project>
+
 
